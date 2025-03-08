@@ -81,4 +81,10 @@ Route::resource('photos', PhotoController::class)->only(['index', 'show']);
 Route::resource('photos', PhotoController::class)->except(['create', 
     'store', 'update', 'destroy']);
 
-    
+// PRAKTIKUM 3
+
+// memanggil route /greeting
+Route::get('/greeting', function () {
+    return view('hello', ['name' => 'Nova']);
+});
+

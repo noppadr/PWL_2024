@@ -88,4 +88,6 @@ Route::get('/greeting', function () {
     return view('blog.hello', ['name' => 'Nova']);
 });
 
+// mengubah greeting dan diarahkan ke WelcomeController
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
 

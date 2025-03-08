@@ -85,6 +85,7 @@ Route::resource('photos', PhotoController::class)->except(['create',
 
 // memanggil route /greeting
 Route::get('/greeting', function () {
-    return view('hello', ['name' => 'Nova']);
+    return view('blog.hello', ['name' => 'Nova']);
 });
+
 
